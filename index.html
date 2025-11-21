@@ -83,4 +83,74 @@
             background: #e6c200;
             padding: 12px 28px;
             color: black;
-            border-radius: 50p
+            border-radius: 50px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .hero-btn:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        /* Fade animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(1.03); }
+            to   { opacity: 1; transform: scale(1); }
+        }
+
+        /* Mobile-friendly */
+        @media (max-width: 600px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .hero-text p {
+                font-size: 1rem;
+            }
+            .hero-btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <!-- Logo -->
+        <img src="paradise_logo.png" alt="Paradise"
+             style="width: 150px; filter: drop-shadow(5px 5px 5px #222);">
+
+        <!-- Social Icons -->
+        <div class="icons-social">
+            <a target="_blank" href="https://m.facebook.com/profile.php?id=100084217780651">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a target="_blank" href="https://www.instagram.com/paradis_de_bijoux19/">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="tel:+2130773474783">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <!-- Hero Banner -->
+        <section class="hero">
+            <img src="images/banner.jpg" alt="Bijoux Collection" class="hero-img">
+
+            <div class="hero-text">
+                <h1>Paradis De Bijoux</h1>
+                <p>Elegance. Luxury. Beauty.</p>
+                <a href="#" class="hero-btn">Shop Now</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
