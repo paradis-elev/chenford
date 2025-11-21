@@ -1,91 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chenford – The Rookie</title>
+    <title>Paradis De Bijoux</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f7;
             margin: 0;
             padding: 0;
-            color: #333;
-        }
-        header {
-            background: #1f1f1f;
-            color: white;
-            padding: 20px;
+            background: #fafafa;
+            font-family: 'Roboto', sans-serif;
             text-align: center;
         }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        img {
+            max-width: 100%;
         }
-        h2 {
+
+        main {
+            margin: 20px;
+        }
+
+        /* Social Icons */
+        .icons-social {
+            margin-top: 15px;
+        }
+        .icons-social a {
             color: #444;
+            margin: 0 12px;
+            font-size: 35px;
+            transition: 0.3s;
         }
-        .image-placeholder {
+        .icons-social a:hover {
+            color: #e6c200;
+            transform: scale(1.2);
+        }
+
+        /* Hero Banner */
+        .hero {
+            position: relative;
             width: 100%;
-            height: 250px;
-            background: #d9d9d9;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            font-size: 1.2em;
+            margin-top: 30px;
+        }
+
+        .hero-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+            animation: fadeIn 1.5s ease-in-out;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Overlay text */
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+        }
+
+        .hero-text h1 {
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
             margin-bottom: 20px;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
 
-<header>
-    <h1>Chenford</h1>
-    <p>Tim Bradford & Lucy Chen from <i>The Rookie</i></p>
-</header>
-
-<div class="container">
-    <div class="image-placeholder">
-        Image of Chenford (placeholder)
-    </div>
-
-    <h2>About Chenford</h2>
-    <p>
-        "Chenford" is the fan-favorite pairing of **Lucy Chen** and **Tim Bradford** from the TV series
-        <i>The Rookie</i>. Their relationship grows from a strict training officer–rookie dynamic into a 
-        deep friendship and eventually a romantic connection.
-    </p>
-
-    <h2>Why Fans Love Them</h2>
-    <ul>
-        <li>Strong emotional development over multiple seasons</li>
-        <li>Mutual respect and personal growth</li>
-        <li>Great chemistry and memorable scenes</li>
-        <li>A slow-burn romance that feels earned and authentic</li>
-    </ul>
-
-    <h2>Key Moments</h2>
-    <p>
-        From trust-building exercises to heartfelt conversations, Chenford’s storyline offers some of 
-        the most compelling moments in the show. Fans especially love their banter, loyalty, and the way 
-        they challenge one another to grow.
-    </p>
-</div>
-
-<footer>
-    &copy; 2025 Chenford Fan Page (Demo)
-</footer>
-
-</body>
-</html>
+        /* Button */
+        .hero-btn {
+            background: #e6c200;
+            padding: 12px 28px;
+            color: black;
+            border-radius: 50p
